@@ -1,0 +1,6 @@
+CC = gcc
+AR = ar
+LIB = liblab.a
+LIBLAB = $(ROOT)/lib/$(LIB)
+LDLIBS = -L$(ROOT)/lib -llab
+CFLAGS = -g  -I$(ROOT)/lib -DDEBUG

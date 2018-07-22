@@ -1,0 +1,68 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "(gdb) Bash on Windows Attach",
+        //     "type": "cppdbg",
+        //     "request": "attach",
+        //     "program": "/mnt/g/Code/c/csapp/lab/shell/shell",
+        //     "processId": "${command:pickRemoteProcess}",
+        //     "pipeTransport": {
+        //         "debuggerPath": "/usr/bin/gdb",
+        //         "pipeProgram": "${env:windir}\\system32\\bash.exe",
+        //         "pipeArgs": ["-c"],
+        //         "pipeCwd": ""
+        //     },
+        //     "setupCommands": [
+        //         {
+        //             "description": "Enable pretty-printing for gdb",
+        //             "text": "-enable-pretty-printing",
+        //             "ignoreFailures": true
+        //         }
+        //     ],
+        //     "sourceFileMap": {
+        //         "/mnt/g/Code/c/csapp/lab/lib":"G:/Code/c/csapp/lab/lib",
+        //         "/mnt/g/Code/c/csapp/lab/shell":"G:/Code/c/csapp/lab/shell",
+        //         "/build/glibc-Cl5G7W/glibc-2.23":"G:/Program Files/linux-env/glibc-2.27",
+        //         "/usr/include":"G:/Program Files/linux-env/usr/include",
+        //         "/lib/x86_64-linux-gnu":"G:/Program Files/linux-env/lib/x86_64-linux-gnu",
+        //         "/usr/lib/x86_64-linux-gnu":"G:/Program Files/linux-env/usr/lib/x86_64-linux-gnu",
+        //     },
+        // },
+        {
+            "name": "(gdb) Bash on Windows Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/mnt/g/Code/c/csapp/lab/shell/shell",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "/mnt/g/Code/c/csapp/lab/shell",
+            "environment": [],
+            "externalConsole": true,
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeProgram": "${env:windir}//system32//bash.exe",
+                "pipeArgs": ["-c"],
+                "pipeCwd": ""
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "sourceFileMap": {
+                "/mnt/g/Code/c/csapp/lab/lib":"G:/Code/c/csapp/lab/lib",
+                "/mnt/g/Code/c/csapp/lab/shell":"G:/Code/c/csapp/lab/shell",
+                "/build/glibc-Cl5G7W/glibc-2.23":"G:/Program Files/linux-env/glibc-2.27",
+                "/usr/include":"G:/Program Files/linux-env/usr/include",
+                "/lib/x86_64-linux-gnu":"G:/Program Files/linux-env/lib/x86_64-linux-gnu",
+                "/usr/lib/x86_64-linux-gnu":"G:/Program Files/linux-env/usr/lib/x86_64-linux-gnu",
+            },
+        },
+    ]
+}
