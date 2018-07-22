@@ -122,7 +122,6 @@ static void runCommand(int bg, int argc, char **argv) {
     sigaddset(&maskOne, SIGCHLD);
     Sigprocmask(SIG_BLOCK, &maskOne, &prevOne);
     if ((pid = Fork()) == 0) {
-        sleep(20);
         // 子进程会继承父进程信号集合
         // 因此在调用execvp之前解除阻塞
         Sigprocmask(SIG_SETMASK, &prevOne, NULL);

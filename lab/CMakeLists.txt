@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.5)
 project(csapp C)
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_CXX_COMPILER gcc)
 ADD_SUBDIRECTORY(shell)

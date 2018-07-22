@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.11)
+cmake_minimum_required(VERSION 3.5)
 include_directories(../lib)
 ADD_LIBRARY(lab SHARED ../lib/lab.c)
 add_executable(shell main.c shell.c signal.c command.c job.c)
